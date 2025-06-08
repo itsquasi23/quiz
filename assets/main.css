@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: 'Karla';
+    background: #506cbc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a,button {
+    font-family: 'Fredoka';
+    background-color: #506cbc;
+    padding: 9px 20px;
+    font-size: 18px;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    box-shadow: 0rem 0.5rem 0rem 0rem rgba(149, 147, 255, 0.22);
+}
+
+a:hover, button:hover {
+    transform: scale(1.0425);
+}
+
+.container {
+    background: #fbfbfb;
+    padding: 36px;
+    border-radius: calc(1.5rem - 1px);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.options button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    color: white;
+    border: none;
+    border-radius: 1.125rem;;
+    cursor: pointer;
+}
+
+#startPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#startButton {
+    font-weight: 600;
+    border: none;
+    color: white;
+    border-radius: 1.125rem;;
+    cursor: pointer;
+    box-shadow: 0rem 0.5rem 0rem 0rem rgba(149, 147, 255, 0.22);
+}
+
+#result {
+    font-size: 22px;
+    color: green;
+    margin-top: 20px;
+}
