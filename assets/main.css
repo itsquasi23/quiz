@@ -14,10 +14,13 @@ body {
 a,button {
     font-family: 'Fredoka';
     background-color: #506cbc;
+    color: white;
     padding: 9px 20px;
     font-size: 18px;
     transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
     box-shadow: 0rem 0.5rem 0rem 0rem rgba(149, 147, 255, 0.22);
+    border: none;
+    border-radius: 1.125rem;
 }
 
 a:hover, button:hover {
@@ -41,11 +44,7 @@ a:hover, button:hover {
 .options button {
     display: block;
     width: 100%;
-    margin: 10px 0;
-    color: white;
-    border: none;
-    border-radius: 1.125rem;;
-    cursor: pointer;
+    margin: 12px 0;
 }
 
 #startPage {
@@ -56,11 +55,6 @@ a:hover, button:hover {
 
 #startButton {
     font-weight: 600;
-    border: none;
-    color: white;
-    border-radius: 1.125rem;;
-    cursor: pointer;
-    box-shadow: 0rem 0.5rem 0rem 0rem rgba(149, 147, 255, 0.22);
 }
 
 #result {
