@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Karla';
-    background: #506cbc;
+    background: #586cd0;
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,14 +13,20 @@ body {
 
 a,button {
     font-family: 'Fredoka';
-    background-color: #506cbc;
+    background-color: #586cd0;
     color: white;
     padding: 9px 20px;
     font-size: 18px;
     transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-    box-shadow: 0rem 0.5rem 0rem 0rem rgba(149, 147, 255, 0.22);
+    box-shadow: 0rem 0.5rem 0rem 0rem rgba(88, 108, 208, 0.22);
+    /*rgb(149,147,255)*/
     border: none;
+    text-decoration: none;
     border-radius: 1.125rem;
+}
+
+.bold {
+    font-weight: 600;
 }
 
 a:hover, button:hover {
@@ -28,11 +34,13 @@ a:hover, button:hover {
 }
 
 .container {
+    max-width: 35rem;
+}
+
+.content {
     background: #fbfbfb;
     padding: 36px;
     border-radius: calc(1.5rem - 1px);
-    max-width: 500px;
-    width: 100%;
     text-align: center;
 }
 
@@ -47,18 +55,18 @@ a:hover, button:hover {
     margin: 12px 0;
 }
 
-#startPage {
+.home {
+    align-items: start;
+}
+
+#start {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#startButton {
-    font-weight: 600;
-}
-
 #result {
     font-size: 22px;
-    color: green;
+    color: #586cd0;
     margin-top: 20px;
 }

@@ -4,30 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>English Quiz</title>
+  <title>Quiz</title>
 
-  <link rel="icon" type="icon" href="assets/images/bsod_square.png">
+  <link rel="icon" type="icon" href="assets/images/icon.png">
   <link rel="stylesheet" href="assets/main.css">
-  <link rel="stylesheet" href="assets/tailwind.css">
+  <script src="https://kit.fontawesome.com/50276babe5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="container">
-    <div id="startPage">
-      <h2>Welcome to the English Quiz!</h2>
-      <p>Test your knowledge of today quiz, click the button below to start quiz.</p>
-      <button id="startButton" onclick="startQuiz()">Start Quiz</button>
+    <div class="content">
+      <div id="start">
+        <h2>Welcome!</h2>
+        <p>Test your knowledge of today quiz, click the button below to start quiz.</p>
+        <button class="bold" onclick="startQuiz()">Start Quiz</button>
+      </div>
+      <div id="quiz" style="display:none;"></div>
+      <p id="result"></p>
     </div>
-
-    <div id="quizBox" style="display:none;"></div>
-    <p id="result"></p>
-    <!--<p>[Made by ItsQuasi]</p>-->
   </div>
 
   <!--<footer>
     <span>Made by ItsQuasi</span>
   </footer>-->
+  <!--<i class="fa-solid fa-arrow-right"></i>-->
+  <!--<i class="fa-solid fa-arrow-left"></i>-->
 
   <script src="assets/main.js"></script>
+
 </body>
+
 </html>
