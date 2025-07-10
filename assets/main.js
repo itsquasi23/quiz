@@ -27,14 +27,17 @@ const questions = [
 let shuffledQuestions;
 let current = 0;
 let score = 0;
+let userAnswers = [];
 
 function startQuiz() {
-    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    shuffledQuestions = questions.map(q => ({ ...q })).sort(() => Math.random() - 0.5);
     current = 0;
     score = 0;
+    userAnswers = [];
     document.getElementById("start").style.display = "none";
     document.getElementById("quiz").style.display = "block";
     document.getElementById("result").textContent = '';
+    document.getElementById("dropdown").innerHTML = '';
     showQuestion();
 }
 
@@ -43,7 +46,21 @@ function showQuestion() {
 
     if (current >= shuffledQuestions.length) {
         box.style.display = "none";
-        document.getElementById("result").textContent = `🎉 Bạn đã đạt được ${score}/20!`;
+        document.getElementById("result").textContent = `🎉 Bạn đã đạt được ${score}/${questions.length}!`;
+
+        // Tạo dropdown kết quả
+        let dropdownHTML = `<details><summary>📋 Xem kết quả chi tiết</summary><ul>`;
+        shuffledQuestions.forEach((q, index) => {
+            const userChoice = userAnswers[index];
+            const correct = userChoice === q.a;
+            dropdownHTML += `<li>
+                        <strong>${index + 1}. ${q.q}</strong><br>
+                        • Bạn chọn: <span class="${correct ? 'correct' : 'wrong'}">${userChoice}</span><br>
+                        • Đáp án đúng: <span class="correct">${q.a}</span>
+                    </li><br>`;
+        });
+        dropdownHTML += `</ul></details>`;
+        document.getElementById("dropdown").innerHTML = dropdownHTML;
         return;
     }
 
@@ -59,6 +76,7 @@ function showQuestion() {
 }
 
 function selectAnswer(choice) {
+    userAnswers.push(choice);
     if (choice === shuffledQuestions[current].a) score++;
     current++;
     showQuestion();

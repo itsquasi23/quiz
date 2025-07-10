@@ -11,7 +11,8 @@ body {
     min-height: 100vh;
 }
 
-a,button {
+a,
+button {
     font-family: 'Fredoka';
     background-color: #586cd0;
     color: white;
@@ -29,19 +30,22 @@ a,button {
     font-weight: 600;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
     transform: scale(1.0425);
 }
 
 .container {
     max-width: 35rem;
+    margin: 0 auto;
 }
 
 .content {
     background: #fbfbfb;
     padding: 36px;
+    margin: 8px;
     border-radius: calc(1.5rem - 1px);
-    text-align: center;
+    align-items: center;
 }
 
 .question {
@@ -69,4 +73,26 @@ a:hover, button:hover {
     font-size: 22px;
     color: #586cd0;
     margin-top: 20px;
+}
+
+.dropdown {
+    margin-top: 20px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+details {
+    margin-bottom: 10px;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
 }
