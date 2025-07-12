@@ -45,20 +45,20 @@ function showQuestion() {
 
     if (current >= shuffledQuestions.length) {
         box.style.display = "none";
-        document.getElementById("result").textContent = `🎉 Bạn đã đạt được ${score}/${questions.length}!`;
+        document.getElementById("result").textContent = `🎉 You scored ${score}/${questions.length}!`;
 
         // Tạo dropdown kết quả
-        let dropdownHTML = `<details><summary>📋 Xem kết quả chi tiết</summary><ul>`;
+        let dropdownHTML = `<details><summary>📋 See result: </summary>`;
         shuffledQuestions.forEach((q, index) => {
             const userChoice = userAnswers[index];
             const correct = userChoice === q.a;
             dropdownHTML += `<li>
                         <strong>${index + 1}. ${q.q}</strong><br>
-                        • Bạn chọn: <span class="${correct ? 'correct' : 'wrong'}">${userChoice}</span><br>
-                        • Đáp án đúng: <span class="correct">${q.a}</span>
+                        • You chose: <span class="${correct ? 'correct' : 'wrong'}">${userChoice}</span><br>
+                        • Correct answer: <span class="correct">${q.a}</span>
                     </li><br>`;
         });
-        dropdownHTML += `</ul></details>`;
+        dropdownHTML += `</details>`;
         document.getElementById("dropdown").innerHTML = dropdownHTML;
         return;
     }
