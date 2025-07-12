@@ -43,9 +43,7 @@ button:hover {
 .content {
     background: #fbfbfb;
     padding: 36px;
-    margin: 8px;
     border-radius: calc(1.5rem - 1px);
-    align-items: center;
 }
 
 .question {
