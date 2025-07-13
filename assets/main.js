@@ -1,26 +1,26 @@
 const questions = [
-    { q: "I ___ a student.", o: ["am", "is", "are", "be"], a: "am" },
-    { q: "She ___ my sister.", o: ["is", "am", "are", "was"], a: "is" },
-    { q: "They ___ in the classroom.", o: ["is", "are", "am", "be"], a: "are" },
-    { q: "We ___ ready.", o: ["is", "are", "am", "be"], a: "are" },
-    { q: "He ___ from Vietnam.", o: ["am", "is", "are", "were"], a: "is" },
-    { q: "You ___ very nice.", o: ["is", "am", "are", "be"], a: "are" },
-    { q: "It ___ a cat.", o: ["are", "is", "am", "be"], a: "is" },
-    { q: "I ___ not hungry.", o: ["is", "am", "are", "be"], a: "am" },
-    { q: "They ___ not here.", o: ["is", "are", "am", "be"], a: "are" },
-    { q: "We ___ not tired.", o: ["am", "is", "are", "be"], a: "are" },
-    
-    { q: "___ she your teacher?", o: ["Is", "Are", "Am", "Do"], a: "Is" },
-    { q: "___ they your friends?", o: ["Is", "Are", "Am", "Do"], a: "Are" },
-    { q: "___ I late?", o: ["Am", "Is", "Are", "Be"], a: "Am" },
-    { q: "___ it your dog?", o: ["Is", "Are", "Am", "Was"], a: "Is" },
-    { q: "___ you okay?", o: ["Are", "Is", "Am", "Do"], a: "Are" },
-    { q: "___ he at school?", o: ["Is", "Are", "Am", "Do"], a: "Is" },
-    { q: "___ we students?", o: ["Are", "Is", "Am", "Be"], a: "Are" },
-    { q: "___ you my brother?", o: ["Are", "Is", "Am", "Be"], a: "Are" },
-    { q: "___ I in class now?", o: ["Am", "Is", "Are", "Be"], a: "Am" },
-    { q: "___ she happy today?", o: ["Is", "Am", "Are", "Was"], a: "Is" }
+    { q: "Chọn từ có nghĩa với từ sau: 'cái ghế'", o: ["chair", "bed", "lamp", "fan"], a: "chair" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái bàn'", o: ["table", "mirror", "pillow", "fan"], a: "table" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái giường'", o: ["bed", "chair", "sofa", "lamp"], a: "bed" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái đèn'", o: ["lamp", "desk", "fan", "bed"], a: "lamp" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái quạt'", o: ["fan", "chair", "table", "pillow"], a: "fan" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái gối'", o: ["pillow", "sofa", "mirror", "bed"], a: "pillow" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái chăn'", o: ["blanket", "pillow", "lamp", "desk"], a: "blanket" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái tủ lạnh'", o: ["fridge", "fan", "table", "chair"], a: "fridge" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái gương'", o: ["mirror", "desk", "lamp", "bed"], a: "mirror" },
+    { q: "Chọn từ có nghĩa với từ sau: 'ghế dài / sofa'", o: ["sofa", "bed", "fan", "pillow"], a: "sofa" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái tủ'", o: ["cupboard", "mirror", "lamp", "fan"], a: "cupboard" },
+    { q: "Chọn từ có nghĩa với từ sau: 'bàn học'", o: ["desk", "chair", "mirror", "pillow"], a: "desk" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái thảm'", o: ["carpet", "fan", "lamp", "mirror"], a: "carpet" },
+    { q: "Chọn từ có nghĩa với từ sau: 'máy giặt'", o: ["washing machine", "fridge", "sofa", "lamp"], a: "washing machine" },
+    { q: "Chọn từ có nghĩa với từ sau: 'bếp nấu'", o: ["stove", "lamp", "chair", "blanket"], a: "stove" },
+    { q: "Chọn từ có nghĩa với từ sau: 'chén / bát'", o: ["bowl", "bed", "table", "desk"], a: "bowl" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái đĩa'", o: ["plate", "fan", "chair", "lamp"], a: "plate" },
+    { q: "Chọn từ có nghĩa với từ sau: 'cái ly'", o: ["glass", "mirror", "desk", "pillow"], a: "glass" },
+    { q: "Chọn từ có nghĩa với từ sau: 'muỗng / thìa'", o: ["spoon", "fork", "lamp", "cupboard"], a: "spoon" },
+    { q: "Chọn từ có nghĩa với từ sau: 'dao'", o: ["knife", "mirror", "bowl", "bed"], a: "knife" }
 ];
+
 
 
 let shuffledQuestions;
