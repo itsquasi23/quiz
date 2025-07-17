@@ -61,6 +61,13 @@ button:hover {
     align-items: start;
 }
 
+.box {
+    margin-top: 9px;
+    padding: 9px 20px;
+    border: 1px solid #586cd0;
+    border-radius: 1.125rem;
+}
+
 #start {
     display: flex;
     flex-direction: column;

@@ -1,27 +1,28 @@
-const questions = [
-    // Phần 1: Chuyển sang dạng câu hỏi Yes/No từ câu trần thuật
-    { q: "Are you a student?", o: ["Yes, I am.", "No, I am not.", "Yes, I is.", "No, I are."], a: "Yes, I am." },
-    { q: "Is she your sister?", o: ["Yes, she is.", "No, she am not.", "Yes, she are.", "No, she isn't."], a: "Yes, she is." },
-    { q: "Are they in the classroom?", o: ["Yes, they are.", "No, they is not.", "Yes, they am.", "No, they be not."], a: "Yes, they are." },
-    { q: "Are we ready?", o: ["Yes, we are.", "No, we am.", "Yes, we is.", "No, we be."], a: "Yes, we are." },
-    { q: "Is he from Vietnam?", o: ["Yes, he is.", "No, he are not.", "Yes, he am.", "No, he be."], a: "Yes, he is." },
-    { q: "Are you very nice?", o: ["Yes, I am.", "No, I is.", "Yes, you are.", "No, you am."], a: "Yes, you are." },
-    { q: "Is it a cat?", o: ["Yes, it is.", "No, it are.", "Yes, it am.", "No, it is not."], a: "Yes, it is." },
-    { q: "Are you hungry?", o: ["No, I am not.", "Yes, I is.", "No, I are.", "Yes, I be not."], a: "No, I am not." },
-    { q: "Are they here?", o: ["No, they are not.", "Yes, they is.", "Yes, they am.", "No, they be."], a: "No, they are not." },
-    { q: "Are we tired?", o: ["No, we are not.", "Yes, we is.", "No, we am.", "Yes, we be not."], a: "No, we are not." },
+/*const questions = [
+    { q: "...", o: ["...", "...", "...", "..."], a: "..." },
+];*/
 
-    // Phần 2: Các câu hỏi Yes/No truyền thống
-    { q: "Is she your teacher?", o: ["Yes, she is.", "No, she are.", "Yes, she am.", "No, she not."], a: "Yes, she is." },
-    { q: "Are they your friends?", o: ["Yes, they are.", "No, they is.", "Yes, they am.", "No, they be not."], a: "Yes, they are." },
-    { q: "Am I late?", o: ["Yes, you are.", "No, I am not.", "Yes, I is.", "No, you am."], a: "Yes, you are." },
-    { q: "Is it your dog?", o: ["Yes, it is.", "No, it are.", "Yes, it am.", "No, it not."], a: "Yes, it is." },
-    { q: "Are you okay?", o: ["Yes, I am.", "No, you are not.", "Yes, you is.", "No, I are."], a: "Yes, I am." },
-    { q: "Is he at school?", o: ["Yes, he is.", "No, he are.", "Yes, he am.", "No, he not."], a: "Yes, he is." },
-    { q: "Are we students?", o: ["Yes, we are.", "No, we is.", "Yes, we am.", "No, we be."], a: "Yes, we are." },
-    { q: "Are you my brother?", o: ["No, I am not.", "Yes, you is.", "No, I are.", "Yes, I be."], a: "No, I am not." },
-    { q: "Am I in class now?", o: ["Yes, you are.", "No, I is.", "Yes, I be.", "No, you not."], a: "Yes, you are." },
-    { q: "Is she happy today?", o: ["Yes, she is.", "No, she am.", "Yes, she are.", "No, she be."], a: "Yes, she is." }
+const questions = [
+  { q: "I like ___ books before bed.", o: ["reading", "to reading", "read"], a: "reading" },
+  { q: "She likes ___ tea in the morning.", o: ["to drink", "drinking", "to drinking"], a: "to drink" },
+  { q: "They like ___ pizza on Fridays.", o: ["eating", "eat", "to eating"], a: "eating" },
+  { q: "He likes ___ early.", o: ["get up", "getting up", "to getting up"], a: "getting up" },
+  { q: "We like ___ after dinner.", o: ["to walk", "walk", "walking"], a: "to walk" },
+  { q: "My mom likes ___ the house clean.", o: ["keep", "keeping", "to keeping"], a: "keeping" },
+  { q: "I like ___ to music when I study.", o: ["listen", "to listen", "listening to"], a: "to listen" },
+  { q: "She likes her coffee ___.", o: ["hot", "hotly", "heat"], a: "hot" },
+  { q: "We like our room ___ near the garden.", o: ["located", "locating", "to locate"], a: "located" },
+  { q: "He doesn’t like ___ in public.", o: ["speaking", "speak", "to speaking"], a: "speaking" },
+  { q: "Do you like ___ pictures of nature?", o: ["taking", "take", "to taking"], a: "taking" },
+  { q: "She likes her students to be ___.", o: ["attentive", "attentively", "attention"], a: "attentive" },
+  { q: "I like people who are ___.", o: ["helpfully", "helpful", "helping"], a: "helpful" },
+  { q: "They like ___ their homework early.", o: ["doing", "do", "to doing"], a: "doing" },
+  { q: "We like ___ with friends on weekends.", o: ["to hang out", "hanging out", "to hanging out"], a: "to hang out" },
+  { q: "He likes his room to be ___.", o: ["clean", "cleanly", "cleaning"], a: "clean" },
+  { q: "I don’t like ___ too much noise.", o: ["make", "making", "to making"], a: "making" },
+  { q: "She likes ___ her friends gifts.", o: ["giving", "to giving", "give"], a: "giving" },
+  { q: "They like ___ stories around the fire.", o: ["to tell", "telling", "tell"], a: "to tell" },
+  { q: "We like ___ with our family.", o: ["spending time", "spend time", "to spending time"], a: "spending time" },
 ];
 
 let shuffledQuestions;
@@ -53,11 +54,13 @@ function showQuestion() {
         shuffledQuestions.forEach((q, index) => {
             const userChoice = userAnswers[index];
             const correct = userChoice === q.a;
-            dropdownHTML += `<li>
-                        <strong>${index + 1}. ${q.q}</strong><br>
-                        • You chose: <span class="${correct ? 'correct' : 'wrong'}">${userChoice}</span><br>
-                        • Correct answer: <span class="correct">${q.a}</span>
-                    </li><br>`;
+            dropdownHTML += `
+                        <div class="box">
+                        <p>${index + 1}. ${q.q}</p>
+                        You chose: <span class="${correct ? 'correct' : 'wrong'}">${userChoice}</span><br>
+                        Correct answer: <span class="correct">${q.a}</span>
+                        </div>
+                    `;
         });
         dropdownHTML += `</details>`;
         document.getElementById("dropdown").innerHTML = dropdownHTML;
