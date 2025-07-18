@@ -1,29 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
+:root {
+    --accent: #586cd0;
+    --bg: #ffffff;
+
+    --viewport-height: 100vh;
+    --border-radius-container: calc(1.5rem - 1px);
+    --border-radius-button: 1.125rem;
+}
+
 body {
     font-family: 'Karla';
-    background: #586cd0;
-    margin: 0;
-    padding: 0;
+    background: var(--accent);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: var(--viewport-height);
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    --alignment: center;
+    --flex-alignment: center;
+    --margin-left: auto;
+    --margin-right: auto;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    max-width: 100%;
+    position: relative;
+    text-align: var(--alignment);
+    z-index: 1;
+    transition: opacity 1s ease 0s, transform 1s ease 0s;
+}
+
+.content {
+    --padding-horizontal: 3rem;
+    --padding-vertical: 3rem;
+    --spacing: 2rem;
+    --width: 35rem;
+    border-radius: var(--border-radius-container);
+    max-width: 100%;
+    position: relative;
+    width: var(--width);
+    z-index: 1;
+    padding: var(--padding-vertical) var(--padding-horizontal);
+    background: #ffffff;
+    border-radius: calc(1.5rem - 1px);
+    box-shadow: 0rem 1rem 6.125rem 0rem rgba(24, 19, 38, 0.42);
 }
 
 a,
 button {
     font-family: 'Fredoka';
-    background-color: #586cd0;
-    color: white;
+    background-color: var(--accent);
+    color: var(--bg);
     padding: 9px 20px;
     font-size: 18px;
     transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
     box-shadow: 0rem 0.5rem 0rem 0rem rgba(88, 108, 208, 0.22);
-    /*rgb(149,147,255)*/
     border: none;
     text-decoration: none;
-    border-radius: 1.125rem;
+    border-radius: var(--border-radius-button);
+}
+
+ol,
+ul {
+    list-style: none;
 }
 
 .bold {
@@ -33,17 +78,6 @@ button {
 a:hover,
 button:hover {
     transform: scale(1.0425);
-}
-
-.container {
-    max-width: 35rem;
-    margin: 0 auto;
-}
-
-.content {
-    background: #fbfbfb;
-    padding: 36px;
-    border-radius: calc(1.5rem - 1px);
 }
 
 .question {
@@ -71,7 +105,12 @@ button:hover {
 #start {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
 }
 
 #result {

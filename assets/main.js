@@ -1,28 +1,28 @@
 /*const questions = [
-    { q: "...", o: ["...", "...", "...", "..."], a: "..." },
+    { q: "...", o: ["...", "...", "...", "..."], a: "..." }
 ];*/
 
 const questions = [
-  { q: "I like ___ books before bed.", o: ["reading", "to reading", "read"], a: "reading" },
-  { q: "She likes ___ tea in the morning.", o: ["to drink", "drinking", "to drinking"], a: "to drink" },
-  { q: "They like ___ pizza on Fridays.", o: ["eating", "eat", "to eating"], a: "eating" },
-  { q: "He likes ___ early.", o: ["get up", "getting up", "to getting up"], a: "getting up" },
-  { q: "We like ___ after dinner.", o: ["to walk", "walk", "walking"], a: "to walk" },
-  { q: "My mom likes ___ the house clean.", o: ["keep", "keeping", "to keeping"], a: "keeping" },
-  { q: "I like ___ to music when I study.", o: ["listen", "to listen", "listening to"], a: "to listen" },
-  { q: "She likes her coffee ___.", o: ["hot", "hotly", "heat"], a: "hot" },
-  { q: "We like our room ___ near the garden.", o: ["located", "locating", "to locate"], a: "located" },
-  { q: "He doesn’t like ___ in public.", o: ["speaking", "speak", "to speaking"], a: "speaking" },
-  { q: "Do you like ___ pictures of nature?", o: ["taking", "take", "to taking"], a: "taking" },
-  { q: "She likes her students to be ___.", o: ["attentive", "attentively", "attention"], a: "attentive" },
-  { q: "I like people who are ___.", o: ["helpfully", "helpful", "helping"], a: "helpful" },
-  { q: "They like ___ their homework early.", o: ["doing", "do", "to doing"], a: "doing" },
-  { q: "We like ___ with friends on weekends.", o: ["to hang out", "hanging out", "to hanging out"], a: "to hang out" },
-  { q: "He likes his room to be ___.", o: ["clean", "cleanly", "cleaning"], a: "clean" },
-  { q: "I don’t like ___ too much noise.", o: ["make", "making", "to making"], a: "making" },
-  { q: "She likes ___ her friends gifts.", o: ["giving", "to giving", "give"], a: "giving" },
-  { q: "They like ___ stories around the fire.", o: ["to tell", "telling", "tell"], a: "to tell" },
-  { q: "We like ___ with our family.", o: ["spending time", "spend time", "to spending time"], a: "spending time" },
+    { q: "I want ___ go home now.", o: ["to", "for", "at", "in"], a: "to" },
+    { q: "She wants ___ visit Paris someday.", o: ["to", "for", "at", "on"], a: "to" },
+    { q: "We want ___ to join the team.", o: ["him", "he", "his", "he's"], a: "him" },
+    { q: "They want us ___ stay longer.", o: ["to", "for", "with", "on"], a: "to" },
+    { q: "Do you want ___ a movie?", o: ["to watch", "watching", "watched", "watch"], a: "to watch" },
+    { q: "He doesn't want ___ late.", o: ["to be", "be", "being", "been"], a: "to be" },
+    { q: "What do you want ___ dinner?", o: ["for", "to", "in", "on"], a: "for" },
+    { q: "I want you ___ me the truth.", o: ["to tell", "tell", "telling", "tells"], a: "to tell" },
+    { q: "We want them ___ early.", o: ["to leave", "leave", "leaving", "left"], a: "to leave" },
+    { q: "Does she want him ___?", o: ["to stay", "stay", "stayed", "stays"], a: "to stay" },
+    { q: "Nobody wants ___ alone.", o: ["to be", "be", "being", "been"], a: "to be" },
+    { q: "He said he didn’t want ___ about it.", o: ["to talk", "talks", "talked", "talking"], a: "to talk" },
+    { q: "I want this ___ finished by tonight.", o: ["to be", "is", "be", "was"], a: "to be" },
+    { q: "She wants her friends ___ happy.", o: ["to be", "be", "being", "been"], a: "to be" },
+    { q: "What do you want me ___?", o: ["to do", "do", "doing", "did"], a: "to do" },
+    { q: "We all want ___ successful.", o: ["to be", "being", "be", "been"], a: "to be" },
+    { q: "They want their teacher ___ them more time.", o: ["to give", "giving", "give", "gives"], a: "to give" },
+    { q: "Why do you want ___ here?", o: ["to stay", "stay", "stayed", "staying"], a: "to stay" },
+    { q: "He might want ___ later.", o: ["to leave", "leave", "left", "leaving"], a: "to leave" },
+    { q: "She doesn't want anyone ___ about the surprise.", o: ["to know", "know", "knowing", "knew"], a: "to know" }
 ];
 
 let shuffledQuestions;
