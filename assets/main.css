@@ -7,6 +7,8 @@
     --viewport-height: 100vh;
     --border-radius-container: calc(1.5rem - 1px);
     --border-radius-button: 1.125rem;
+
+    --spacing: 2rem;
 }
 
 body {
@@ -37,9 +39,8 @@ body {
 }
 
 .content {
-    --padding-horizontal: 3rem;
-    --padding-vertical: 3rem;
-    --spacing: 2rem;
+    --padding-horizontal: 2rem;
+    --padding-vertical: 2rem;
     --width: 35rem;
     border-radius: var(--border-radius-container);
     max-width: 100%;
